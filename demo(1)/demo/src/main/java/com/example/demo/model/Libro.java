@@ -13,11 +13,10 @@ import javax.persistence.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "libro")
+@Table(name = "libro_<javeriana>")
 public class Libro {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  private long id;
   private String referencia;
   private String autor;
   private long precio;
