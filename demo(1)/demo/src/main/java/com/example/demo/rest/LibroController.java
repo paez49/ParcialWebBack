@@ -13,12 +13,12 @@ public class LibroController {
   @Autowired
   private LibroService libroService;
 
-  @PostMapping
+  @PostMapping("/create")
   public void crearLibro(@RequestBody Libro libro) {
     libroService.crearLibro(libro);
   }
 
-  @GetMapping
+  @GetMapping("/get")
   public List<Libro> obtenerLibros() {
     return libroService.obtenerListaLibros();
   }
